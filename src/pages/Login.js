@@ -52,6 +52,8 @@ export default class Login extends Component {
 
             scheduleNotification(turmas);
 
+            // Alert.alert("TESTE", JSON.stringify(turmas));
+
             this.setState({ loading: false });
 
             this.props.navigation.navigate('Home');
