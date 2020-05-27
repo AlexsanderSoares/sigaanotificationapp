@@ -33,6 +33,7 @@ class FotoPerfil extends Component {
                     source={
                         {uri: 'data:image/png;base64,' + this.state.user.foto}
                     }
+                    avatarStyle={{borderWidth: 3, borderColor: '#fff', borderRadius: 100,}}
                 />
                 {/* <TouchableOpacity 
                     onPress={() => this.props.navigation.navigate("Perfil")}

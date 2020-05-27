@@ -1,7 +1,8 @@
 import { create } from 'apisauce';
+import { URL_API } from 'react-native-dotenv'
 
 const api = create({
-    baseURL: 'https://sigaanotification.herokuapp.com',
+    baseURL: URL_API,
 });
 
 api.addResponseTransform(response => {

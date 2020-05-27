@@ -39,6 +39,8 @@ export default class Login extends Component {
                 password: this.state.senha,
             });
 
+            console.log(response);
+
             const { infoAluno, turmas } = response.data;
 
             if(infoAluno && turmas){
@@ -59,6 +61,8 @@ export default class Login extends Component {
             this.props.navigation.navigate('Home');
 
         }catch(err){
+
+            console.log(err);
 
             this.setState({ loading: false });
 
